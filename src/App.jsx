@@ -14,8 +14,9 @@ function App() {
      <BrowserRouter>
      <Navbar/>
        <Routes>
+       <Route exact path="/" element={<Read />} />
+       <Route exact  path="/read" element={<Read/>}></Route>
         <Route exact  path="/create" element={<Create/>}></Route>
-        <Route exact  path="/read" element={<Read/>}></Route>
         <Route exact  path="/edit/:id" element={<Update/>}></Route>
        </Routes>
      </BrowserRouter>
